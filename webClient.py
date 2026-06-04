@@ -3,6 +3,8 @@ import requests
 import streamlit as st
 import pandas as pd
 from bs4 import BeautifulSoup
+import nltk
+nltk.download('stopwords', quiet=True)
 from nltk.corpus import stopwords
 import plotly.express as px
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
